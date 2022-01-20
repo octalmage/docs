@@ -6,22 +6,22 @@
     <meta charset="utf-8" />
     <title>Subcommands &#8212; Terra Docs  documentation</title>
     
-  <link href="../../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
+    <link href="../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
     
-  <link rel="stylesheet"
-    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link rel="stylesheet"
+      href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
-    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css" />
@@ -31,8 +31,8 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-  <link rel="preload" as="script" href="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
-
+    <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
     <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
@@ -41,7 +41,7 @@
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
     <script src="../../../../_static/design-tabs.js"></script>
-    <script src="../../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="shortcut icon" href="../../../../_static/docs_favicon.ico"/>
@@ -65,7 +65,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../../index.html">
@@ -148,7 +153,7 @@
        </li>
        <li class="toctree-l4">
         <a class="reference internal" href="../../../learn/terra-station/station-guides/staking.html">
-         Manage delegations
+         Manage Staking
         </a>
        </li>
        <li class="toctree-l4">
@@ -168,7 +173,7 @@
        </li>
        <li class="toctree-l4">
         <a class="reference internal" href="../../../learn/terra-station/station-guides/testnet.html">
-         Use the testnet
+         Testnet
         </a>
        </li>
       </ul>
@@ -230,8 +235,13 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../../dapp/quick-start/using-terrain.html">
-         Using Terrain
+        <a class="reference internal" href="../../dapp/quick-start/using-terrain-localterra.html">
+         Use Terrain with LocalTerra
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../dapp/quick-start/using-terrain-testnet.html">
+         Use Terrain with the testnet
         </a>
        </li>
       </ul>
@@ -252,16 +262,6 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../../dapp/smart-contracts/interact-with-smart-contract.html">
-         Interacting with the Contract
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../../dapp/smart-contracts/manage-cw20-tokens.html">
-         CW20 Tokens
-        </a>
-       </li>
-       <li class="toctree-l4">
         <a class="reference internal" href="../../dapp/smart-contracts/set-up-local-environment.html">
          Environment Setup
         </a>
@@ -269,6 +269,16 @@
        <li class="toctree-l4">
         <a class="reference internal" href="../../dapp/smart-contracts/write-smart-contract.html">
          Writing the Contract
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../dapp/smart-contracts/interact-with-smart-contract.html">
+         Interacting with the Contract
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../dapp/smart-contracts/manage-cw20-tokens.html">
+         CW20 Tokens
         </a>
        </li>
       </ul>
@@ -287,7 +297,11 @@
     <ul class="current">
      <li class="toctree-l3 current active has-children">
       <a class="reference internal" href="README.html">
-       terrad
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         terrad
+        </span>
+       </code>
       </a>
       <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
       <label for="toctree-checkbox-10">
@@ -300,7 +314,7 @@
          Install terrad
         </a>
        </li>
-       <li class="toctree-l4 current active">
+       <li class="toctree-l4">
         <a class="reference internal" href="using-terrad.html">
          Using terrad
         </a>
@@ -359,11 +373,16 @@
        Start the light client daemon (LCD)
       </a>
      </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../endpoints.html">
+       RPC endpoints
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../module-specifications/README.html">
-     Terra core modules
+     Terra Core modules
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
     <label for="toctree-checkbox-12">
@@ -550,20 +569,71 @@
        </li>
       </ul>
      </li>
+     <li class="toctree-l3">
+      <a class="reference external" href="https://terra-money.github.io/terra.py/">
+       Terra.py
+      </a>
+     </li>
     </ul>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2 current active has-children">
     <a class="reference internal" href="../../reference/README.html">
      Dev reference
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
     <label for="toctree-checkbox-15">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul>
+    <ul class="current">
      <li class="toctree-l3">
-      <a class="reference internal" href="../../reference/endpoints.html">
+      <a class="reference external" href="https://lcd.terra.dev/swagger/">
+       Terra REST API
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference external" href="https://pkg.go.dev/github.com/terra-money/core">
+       Terra Core GoDoc
+      </a>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="README.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         terrad
+        </span>
+       </code>
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+      <label for="toctree-checkbox-16">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="install-terrad.html">
+         Install terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="using-terrad.html">
+         Using terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="commands.html">
+         Commands
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Subcommands
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../endpoints.html">
        RPC endpoints
       </a>
      </li>
@@ -582,23 +652,23 @@
   </ul>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../../../full-node/README.html">
    Full node
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-  <label for="toctree-checkbox-16">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../../full-node/run-a-full-terra-node/README.html">
      Run a full Terra node
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-    <label for="toctree-checkbox-17">
+    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+    <label for="toctree-checkbox-18">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -644,8 +714,8 @@
     <a class="reference internal" href="../../../full-node/manage-a-terra-validator/README.html">
      Manage a validator
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-    <label for="toctree-checkbox-18">
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -682,10 +752,83 @@
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 current active has-children">
     <a class="reference internal" href="../../../full-node/reference/README.html">
      Node reference
     </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference external" href="https://lcd.terra.dev/swagger/">
+       Terra REST API
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference external" href="https://pkg.go.dev/github.com/terra-money/core">
+       Terra Core GoDoc
+      </a>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="README.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         terrad
+        </span>
+       </code>
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+      <label for="toctree-checkbox-21">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="install-terrad.html">
+         Install terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="using-terrad.html">
+         Using terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="commands.html">
+         Commands
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Subcommands
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../endpoints.html">
+       RPC endpoints
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../start-lcd.html">
+       Start the light client daemon (LCD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/history-and-changes.html">
+       History and changes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/migration-guide.html">
+       Columbus-5 upgrade
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -695,8 +838,8 @@
   <a class="reference internal" href="../../../ecosystem/README.html">
    Ecosystem
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -709,6 +852,374 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../../../ecosystem/integrations.html">
      Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.terra.money/ecosystem">
+     dApps
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../spacecamp/README.html">
+   Spacecamp
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../learn/terra-station/README.html">
+     Terra Station
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../learn/terra-station/download/README.html">
+       Download
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/download/terra-station-desktop.html">
+         Terra Station desktop
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/download/terra-station-extension.html">
+         Terra Station extension
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/download/terra-station-mobile.html">
+         Terra Station mobile
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../learn/terra-station/station-guides/README.html">
+       Terra Station guides
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+      <label for="toctree-checkbox-26">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/wallet.html">
+         Wallet
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/staking.html">
+         Manage Staking
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/swap.html">
+         Mint, burn, or swap
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/governance.html">
+         Governance
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/contracts.html">
+         Contracts
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/testnet.html">
+         Testnet
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../dapp/quick-start/README.html">
+     5-minute quickstart guide
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/>
+    <label for="toctree-checkbox-27">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/quick-start/initial-setup.html">
+       Initial setup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/quick-start/using-terrain-localterra.html">
+       Use Terrain with LocalTerra
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/quick-start/using-terrain-testnet.html">
+       Use Terrain with the testnet
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../dapp/quick-start/using-terrain-localterra.html">
+     Use Terrain with LocalTerra
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../dapp/quick-start/using-terrain-testnet.html">
+     Use Terrain with the testnet
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../dapp/smart-contracts/README.html">
+     In-depth dApp guide
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/>
+    <label for="toctree-checkbox-28">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/smart-contracts/build-terra-dapp.html">
+       Build a simple Terra dApp
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/smart-contracts/set-up-local-environment.html">
+       Environment Setup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/smart-contracts/write-smart-contract.html">
+       Writing the Contract
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/smart-contracts/interact-with-smart-contract.html">
+       Interacting with the Contract
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dapp/smart-contracts/manage-cw20-tokens.html">
+       CW20 Tokens
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../endpoints.html">
+     RPC endpoints
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../module-specifications/README.html">
+     Terra Core modules
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/>
+    <label for="toctree-checkbox-29">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-auth.html">
+       Auth
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-authz.html">
+       AuthZ
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-bank.html">
+       Bank
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-capability.html">
+       Capability
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-distribution.html">
+       Distribution
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-evidence.html">
+       Evidence
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-feegrant.html">
+       Fee grant
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-governance.html">
+       Governance
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-market.html">
+       Market
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-mint.html">
+       Mint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-oracle.html">
+       Oracle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-slashing.html">
+       Slashing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-staking.html">
+       Staking
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-treasury.html">
+       Treasury
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-wasm.html">
+       WASM
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../sdks/terra-js/README.html">
+     Terra.js
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/>
+    <label for="toctree-checkbox-30">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/add-modules.html">
+       Add modules
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/coin-and-coins.html">
+       Coin and Coins
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/common-examples.html">
+       Common examples
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/fees.html">
+       Fees
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/keys.html">
+       Keys
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/make-a-connection.html">
+       Make a connection
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/msgAuthorization.html">
+       MsgAuthorization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/multisend.html">
+       MsgSend
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/numeric.html">
+       Numeric
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/oracle-feeder.html">
+       Oracle feeder
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/query-data.html">
+       Query data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/smart-contracts.html">
+       Smart contracts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/station-extension.html">
+       Terra Station extension
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/transactions.html">
+       Transactions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/wallets.html">
+       Wallets
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/Websockets.html">
+       Websockets
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://terra-money.github.io/terra.py/">
+     Terra.py
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://faucet.terra.money/">
+     Faucet
     </a>
    </li>
   </ul>
@@ -725,22 +1236,22 @@
 
 
           
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
     <div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
             
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -1988,7 +2499,7 @@
     </span>
    </code>
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#text-proposals">
      Text proposals
@@ -3481,7 +3992,7 @@
     </span>
    </code>
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#text-proposals">
      Text proposals
@@ -3815,8 +4326,9 @@
 <div class="section" id="keys-add">
 <h2><code class="docutils literal notranslate"><span class="pre">keys</span> <span class="pre">add</span></code><a class="headerlink" href="#keys-add" title="Permalink to this headline">¶</a></h2>
 <p>Generates a public and private key pair for an account so that you can receive funds, send funds, create bonding transactions, and so on.</p>
-<div class="highlight-tip notranslate"><div class="highlight"><pre><span></span>For security purposes, run this command on an offline computer.
-</pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For security purposes, run this command on an offline computer.</p>
 </div>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad keys add &lt;your-key-name&gt;
@@ -3825,24 +4337,28 @@
 <p>where <code class="docutils literal notranslate"><span class="pre">&lt;your-key-name&gt;</span></code> is the name of the account. It references the account number used to derive the key pair from the mnemonic. When you want to send a transaction, you will use this name to identify your account.</p>
 <p>To specify the path (<code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span></code>, …) you want to use to generate your account, you can append the optional <code class="docutils literal notranslate"><span class="pre">--account</span></code> flag. By default, account <code class="docutils literal notranslate"><span class="pre">0</span></code> is generated.</p>
 <p>The command generates a 24-word mnemonic and saves the private and public keys for account <code class="docutils literal notranslate"><span class="pre">0</span></code> simultaneously. You are prompted to specify a passphrase that is used to encrypt the private key of account <code class="docutils literal notranslate"><span class="pre">0</span></code> on disk. Each time you want to send a transaction, this password is required. If you lose the password, you can always recover the private key by using the mnemonic phrase.</p>
-<div class="highlight-danger notranslate"><div class="highlight"><pre><span></span>To prevent theft or loss of funds, ensure that you keep multiple copies of your mnemonic and store it in a secure place and that only you know how to access it. If someone is able to gain access to your mnemonic, they are able to gain access to your private keys and control the accounts associated with them.
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>To prevent theft or loss of funds, ensure that you keep multiple copies of your mnemonic and store it in a secure place and that only you know how to access it. If someone is able to gain access to your mnemonic, they are able to gain access to your private keys and control the accounts associated with them.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After you have triple-checked your mnemonic and safely stored it, you can delete bash history to ensure no one can retrieve it.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">history</span> -c
+rm ~/.bash_history
 </pre></div>
 </div>
-<div class="highlight-tip notranslate"><div class="highlight"><pre><span></span>After you have triple-checked your mnemonic and safely stored it, you can delete bash history to ensure no one can retrieve it.
-
-```bash
-history -c
-rm ~/.bash_history
-```
-</pre></div>
 </div>
 <p>To generate more accounts from the same mnemonic, run:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad keys add &lt;your-key-name&gt; --recover --account <span class="m">1</span>
 </pre></div>
 </div>
 <p>You are prompted to specify a passphrase and your mnemonic. To generate a different account, change the account number.</p>
-<div class="highlight-danger notranslate"><div class="highlight"><pre><span></span>- Do not use the same passphrase for multiple keys. We are not responsible for the loss of funds. Do not lose or share your mnemonic with anyone.
-</pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<ul class="simple">
+<li><p>Do not use the same passphrase for multiple keys. We are not responsible for the loss of funds. Do not lose or share your mnemonic with anyone.</p></li>
+</ul>
 </div>
 <p><strong>Example</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad keys add myAccount
@@ -3853,7 +4369,7 @@ rm ~/.bash_history
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad keys add &lt;yourKeyName&gt; --recover
 </pre></div>
 </div>
-<p>For information about generating multisignature accounts and signing transactions, see <span class="xref myst">Sign with a multisig account</span>.</p>
+<p>For information about generating multisignature accounts and signing transactions, see <a class="reference internal" href="../sign-with-multisig.html"><span class="doc std std-doc">Sign with a multisig account</span></a>.</p>
 </div>
 <div class="section" id="keys-show">
 <h2><code class="docutils literal notranslate"><span class="pre">keys</span> <span class="pre">show</span></code><a class="headerlink" href="#keys-show" title="Permalink to this headline">¶</a></h2>
@@ -3910,11 +4426,10 @@ rm ~/.bash_history
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query bank balances terra15h6vd5f0wqps26zjlwrc6chah08ryu4hzzdwhc
 </pre></div>
 </div>
-<p>Learn more about <span class="xref myst">account addresses</span>.</p>
-<div class="highlight-warning notranslate"><div class="highlight"><pre><span></span>When you query an account balance that has zero tokens or you fund an account before your node has fully synced with the chain, this error message is sent:
-
-`No account with address &lt;account-address&gt; was found in the state`.
-</pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you query an account balance that has zero tokens or you fund an account before your node has fully synced with the chain, this error message is sent:</p>
+<p><code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">account</span> <span class="pre">with</span> <span class="pre">address</span> <span class="pre">&lt;account-address&gt;</span> <span class="pre">was</span> <span class="pre">found</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">state</span></code>.</p>
 </div>
 </div>
 <div class="section" id="query-bank-denom-metadata">
@@ -3981,10 +4496,10 @@ rm ~/.bash_history
 </pre></div>
 </div>
 <p>The parameters are returned in YAML, as shown in the following example:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">community_tax</span><span class="p">:</span> <span class="s">&quot;0.020000000000000000&quot;</span>
-<span class="nt">base_proposer_reward</span><span class="p">:</span> <span class="s">&quot;0.010000000000000000&quot;</span>
-<span class="nt">bonus_proposer_reward</span><span class="p">:</span> <span class="s">&quot;0.040000000000000000&quot;</span>
-<span class="nt">withdraw_addr_enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">community_tax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.020000000000000000&quot;</span><span class="w"></span>
+<span class="nt">base_proposer_reward</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.010000000000000000&quot;</span><span class="w"></span>
+<span class="nt">bonus_proposer_reward</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.040000000000000000&quot;</span><span class="w"></span>
+<span class="nt">withdraw_addr_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -4093,17 +4608,17 @@ rm ~/.bash_history
 </pre></div>
 </div>
 <p>The parameters are returned in the following format:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">voting_params</span><span class="p">:</span>
-  <span class="nt">voting_period</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5m0s</span>
-<span class="nt">tally_params</span><span class="p">:</span>
-  <span class="nt">quorum</span><span class="p">:</span> <span class="s">&quot;0.334000000000000000&quot;</span>
-  <span class="nt">threshold</span><span class="p">:</span> <span class="s">&quot;0.500000000000000000&quot;</span>
-  <span class="nt">veto</span><span class="p">:</span> <span class="s">&quot;0.334000000000000000&quot;</span>
-<span class="nt">deposit_parmas</span><span class="p">:</span>
-  <span class="nt">min_deposit</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="nt">denom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">uluna</span>
-      <span class="nt">amount</span><span class="p">:</span> <span class="s">&quot;10000000&quot;</span>
-  <span class="nt">max_deposit_period</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">48h0m0s</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">voting_params</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">voting_period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m0s</span><span class="w"></span>
+<span class="nt">tally_params</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">quorum</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.334000000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">threshold</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.500000000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">veto</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.334000000000000000&quot;</span><span class="w"></span>
+<span class="nt">deposit_parmas</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">min_deposit</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">denom</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uluna</span><span class="w"></span>
+<span class="w">      </span><span class="nt">amount</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">max_deposit_period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">48h0m0s</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -4160,12 +4675,12 @@ rm ~/.bash_history
 </pre></div>
 </div>
 <p>Parameters are returned in the following format:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">mint_denom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">uluna</span>
-<span class="nt">inflation_rate_change</span><span class="p">:</span> <span class="s">&quot;0.130000000000000000&quot;</span>
-<span class="nt">inflation_max</span><span class="p">:</span> <span class="s">&quot;0.200000000000000000&quot;</span>
-<span class="nt">inflation_min</span><span class="p">:</span> <span class="s">&quot;0.070000000000000000&quot;</span>
-<span class="nt">goal_bonded</span><span class="p">:</span> <span class="s">&quot;0.670000000000000000&quot;</span>
-<span class="nt">blocks_per_year</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">6311520</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">mint_denom</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uluna</span><span class="w"></span>
+<span class="nt">inflation_rate_change</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.130000000000000000&quot;</span><span class="w"></span>
+<span class="nt">inflation_max</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.200000000000000000&quot;</span><span class="w"></span>
+<span class="nt">inflation_min</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.070000000000000000&quot;</span><span class="w"></span>
+<span class="nt">goal_bonded</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.670000000000000000&quot;</span><span class="w"></span>
+<span class="nt">blocks_per_year</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6311520</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -4233,22 +4748,22 @@ rm ~/.bash_history
 </pre></div>
 </div>
 <p>The parameters are returned in the following format:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">vote_period</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
-<span class="nt">vote_threshold</span><span class="p">:</span> <span class="s">&quot;0.500000000000000000&quot;</span>
-<span class="nt">reward_band</span><span class="p">:</span> <span class="s">&quot;0.020000000000000000&quot;</span>
-<span class="nt">reward_distribution_window</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5256000</span>
-<span class="nt">whitelist</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ukrw</span>
-    <span class="nt">tobin_tax</span><span class="p">:</span> <span class="s">&quot;0.002500000000000000&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">usdr</span>
-    <span class="nt">tobin_tax</span><span class="p">:</span> <span class="s">&quot;0.002500000000000000&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">uusd</span>
-    <span class="nt">tobin_tax</span><span class="p">:</span> <span class="s">&quot;0.002500000000000000&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">umnt</span>
-    <span class="nt">tobin_tax</span><span class="p">:</span> <span class="s">&quot;0.020000000000000000&quot;</span>
-<span class="nt">slash_fraction</span><span class="p">:</span> <span class="s">&quot;0.000100000000000000&quot;</span>
-<span class="nt">slash_window</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100800</span>
-<span class="nt">min_valid_per_window</span><span class="p">:</span> <span class="s">&quot;0.050000000000000000&quot;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">vote_period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
+<span class="nt">vote_threshold</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.500000000000000000&quot;</span><span class="w"></span>
+<span class="nt">reward_band</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.020000000000000000&quot;</span><span class="w"></span>
+<span class="nt">reward_distribution_window</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5256000</span><span class="w"></span>
+<span class="nt">whitelist</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ukrw</span><span class="w"></span>
+<span class="w">    </span><span class="nt">tobin_tax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.002500000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">usdr</span><span class="w"></span>
+<span class="w">    </span><span class="nt">tobin_tax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.002500000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uusd</span><span class="w"></span>
+<span class="w">    </span><span class="nt">tobin_tax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.002500000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">umnt</span><span class="w"></span>
+<span class="w">    </span><span class="nt">tobin_tax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.020000000000000000&quot;</span><span class="w"></span>
+<span class="nt">slash_fraction</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.000100000000000000&quot;</span><span class="w"></span>
+<span class="nt">slash_window</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100800</span><span class="w"></span>
+<span class="nt">min_valid_per_window</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.050000000000000000&quot;</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -4296,11 +4811,11 @@ rm ~/.bash_history
 </pre></div>
 </div>
 <p>The parameters are returned in the following format:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">signed_blocks_window</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100</span>
-<span class="nt">min_signed_per_window</span><span class="p">:</span> <span class="s">&quot;0.500000000000000000&quot;</span>
-<span class="nt">downtime_jail_duration</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10m0s</span>
-<span class="nt">slash_fraction_double_sign</span><span class="p">:</span> <span class="s">&quot;0.050000000000000000&quot;</span>
-<span class="nt">slash_fraction_downtime</span><span class="p">:</span> <span class="s">&quot;0.010000000000000000&quot;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">signed_blocks_window</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span><span class="w"></span>
+<span class="nt">min_signed_per_window</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.500000000000000000&quot;</span><span class="w"></span>
+<span class="nt">downtime_jail_duration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10m0s</span><span class="w"></span>
+<span class="nt">slash_fraction_double_sign</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.050000000000000000&quot;</span><span class="w"></span>
+<span class="nt">slash_fraction_downtime</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.010000000000000000&quot;</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -4360,11 +4875,11 @@ rm ~/.bash_history
 </pre></div>
 </div>
 <p>The parameters are returned in the following format:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">unbonding_time</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">504h0m0s</span>
-<span class="nt">max_validators</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100</span>
-<span class="nt">max_entries</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100</span>
-<span class="nt">historical_entries</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
-<span class="nt">bond_denom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">uluna</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">unbonding_time</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">504h0m0s</span><span class="w"></span>
+<span class="nt">max_validators</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span><span class="w"></span>
+<span class="nt">max_entries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span><span class="w"></span>
+<span class="nt">historical_entries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w"></span>
+<span class="nt">bond_denom</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uluna</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -4469,6 +4984,10 @@ rm ~/.bash_history
 </div>
 <div class="section" id="query-treasury-indicators">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">indicators</span></code><a class="headerlink" href="#query-treasury-indicators" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
 <p>Retrieves treasury indicators.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury indicators
@@ -4477,36 +4996,44 @@ rm ~/.bash_history
 </div>
 <div class="section" id="query-treasury-params">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">params</span></code><a class="headerlink" href="#query-treasury-params" title="Permalink to this headline">¶</a></h2>
-<p>Retrieves the high-level settings for the treasury. For more information, see <span class="xref myst">treasury parameters</span>.</p>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
+<p>Retrieves the high-level settings for the treasury. For more information, see <a class="reference internal" href="../../module-specifications/spec-treasury.html#parameters"><span class="std std-doc">treasury parameters</span></a>.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury params
 </pre></div>
 </div>
 <p>The parameters are returned in the following format:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">tax_policy</span><span class="p">:</span>
-  <span class="nt">ratemin</span><span class="p">:</span> <span class="s">&quot;0.000500000000000000&quot;</span>
-  <span class="nt">ratemax</span><span class="p">:</span> <span class="s">&quot;0.010000000000000000&quot;</span>
-  <span class="nt">cap</span><span class="p">:</span>
-    <span class="nt">denom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">usdr</span>
-    <span class="nt">amount</span><span class="p">:</span> <span class="s">&quot;1000000&quot;</span>
-  <span class="nt">changeratemax</span><span class="p">:</span> <span class="s">&quot;0.000250000000000000&quot;</span>
-<span class="nt">reward_policy</span><span class="p">:</span>
-  <span class="nt">ratemin</span><span class="p">:</span> <span class="s">&quot;0.050000000000000000&quot;</span>
-  <span class="nt">ratemax</span><span class="p">:</span> <span class="s">&quot;0.500000000000000000&quot;</span>
-  <span class="nt">cap</span><span class="p">:</span>
-    <span class="nt">denom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">unused</span>
-    <span class="nt">amount</span><span class="p">:</span> <span class="s">&quot;0&quot;</span>
-  <span class="nt">changeratemax</span><span class="p">:</span> <span class="s">&quot;0.025000000000000000&quot;</span>
-<span class="nt">seigniorage_burden_target</span><span class="p">:</span> <span class="s">&quot;0.670000000000000000&quot;</span>
-<span class="nt">mining_increment</span><span class="p">:</span> <span class="s">&quot;1.070000000000000000&quot;</span>
-<span class="nt">window_short</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4</span>
-<span class="nt">window_long</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">52</span>
-<span class="nt">window_probation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">12</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">tax_policy</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">ratemin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.00000000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">ratemax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.00000000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">cap</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">denom</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">usdr</span><span class="w"></span>
+<span class="w">    </span><span class="nt">amount</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">changeratemax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.0000000000000000&quot;</span><span class="w"></span>
+<span class="nt">reward_policy</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">ratemin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.00000000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">ratemax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.00000000000000000&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">cap</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">denom</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unused</span><span class="w"></span>
+<span class="w">    </span><span class="nt">amount</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">changeratemax</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.0000000000000000&quot;</span><span class="w"></span>
+<span class="nt">seigniorage_burden_target</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.0000000000000000&quot;</span><span class="w"></span>
+<span class="nt">mining_increment</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.00000000000000000&quot;</span><span class="w"></span>
+<span class="nt">window_short</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span><span class="w"></span>
+<span class="nt">window_long</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">52</span><span class="w"></span>
+<span class="nt">window_probation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="query-treasury-reward-weight">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">reward-weight</span></code><a class="headerlink" href="#query-treasury-reward-weight" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
 <p>Retrieves the reward weight of the current epoch. The reward weight is the portion of seigniorage that is designated as ballot rewards for the winners of exchange-rate oracle.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury reward-weight
@@ -4515,6 +5042,10 @@ rm ~/.bash_history
 </div>
 <div class="section" id="query-treasury-seigniorage-proceeds">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">seigniorage-proceeds</span></code><a class="headerlink" href="#query-treasury-seigniorage-proceeds" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
 <p>Retrieves the amount of seigniorage denominated in uluna in the current epoch.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury seigniorage-proceeds
@@ -4523,6 +5054,10 @@ rm ~/.bash_history
 </div>
 <div class="section" id="query-treasury-tax-cap">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">tax-cap</span></code><a class="headerlink" href="#query-treasury-tax-cap" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero. This command is here for reference.</p>
+</div>
 <p>Retrieves the current stability tax cap of the specified denomination. Stability fees are capped at some fixed amount of SDT to avoid penalizing large transactions.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury tax-cap &lt;denomination&gt;
@@ -4535,6 +5070,10 @@ rm ~/.bash_history
 </div>
 <div class="section" id="query-treasury-tax-caps">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">tax-caps</span></code><a class="headerlink" href="#query-treasury-tax-caps" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
 <p>Retrieves the current stability tax cap of all assets.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury tax-caps
@@ -4543,6 +5082,10 @@ rm ~/.bash_history
 </div>
 <div class="section" id="query-treasury-tax-proceeds">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">tax-proceeds</span></code><a class="headerlink" href="#query-treasury-tax-proceeds" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
 <p>Retrieves the cumulative tax proceeds.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury tax-proceeds
@@ -4551,10 +5094,18 @@ rm ~/.bash_history
 </div>
 <div class="section" id="query-treasury-tax-rate">
 <h2><code class="docutils literal notranslate"><span class="pre">query</span> <span class="pre">treasury</span> <span class="pre">tax-rate</span></code><a class="headerlink" href="#query-treasury-tax-rate" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
 <p>Retrieves the stability tax rate of the current epoch.</p>
 <p><strong>Syntax</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>terrad query treasury tax-rate
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of proposal <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, the stability fee tax rate is zero.</p>
 </div>
 </div>
 <div class="section" id="query-tx">
@@ -4630,9 +5181,9 @@ rm ~/.bash_history
 </pre></div>
 </div>
 <p>The parameters are returned in the following format:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">max_contract_size</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">512000</span>
-<span class="nt">max_contract_gas</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100000000</span>
-<span class="nt">max_contract_msg_size</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1024</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">max_contract_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">512000</span><span class="w"></span>
+<span class="nt">max_contract_gas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100000000</span><span class="w"></span>
+<span class="nt">max_contract_msg_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1024</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -4766,8 +5317,9 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
     --chain-id<span class="o">=</span>columbus-5
 </pre></div>
 </div>
-<div class="highlight-warning notranslate"><div class="highlight"><pre><span></span>Proposals that don&#39;t meet this requirement are deleted after `MaxDepositPeriod` is reached.
-</pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Proposals that don’t meet this requirement are deleted after <code class="docutils literal notranslate"><span class="pre">MaxDepositPeriod</span></code> is reached.</p>
 </div>
 </div>
 <div class="section" id="tx-gov-submit-proposal">
@@ -4814,27 +5366,28 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
 </pre></div>
 </div>
 <p>where <code class="docutils literal notranslate"><span class="pre">proposal.json</span></code> contains the following information:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Param Change&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Update max validators&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;changes&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;subspace&quot;</span><span class="p">:</span> <span class="s2">&quot;staking&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;MaxValidators&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">105</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;deposit&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;denom&quot;</span><span class="p">:</span> <span class="s2">&quot;uluna&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;10000000&quot;</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Param Change&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Update max validators&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;changes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;subspace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;staking&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MaxValidators&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">105</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;deposit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;denom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uluna&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10000000&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<div class="highlight-warning notranslate"><div class="highlight"><pre><span></span>Because parameter changes are evaluated but not validated, ensure that new value you propose is valid for its parameter. For example, the proposed value for `MaxValidators` must be an integer, not a decimal.
-</pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Because parameter changes are evaluated but not validated, ensure that new value you propose is valid for its parameter. For example, the proposed value for <code class="docutils literal notranslate"><span class="pre">MaxValidators</span></code> must be an integer, not a decimal.</p>
 </div>
 </div>
 <div class="section" id="community-pool-spend-proposal">
@@ -4855,29 +5408,33 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
 </pre></div>
 </div>
 <p>where <code class="docutils literal notranslate"><span class="pre">proposal.json</span></code> contains the following information:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Community Pool Spend&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Pay me some Lunas!&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;recipient&quot;</span><span class="p">:</span> <span class="s2">&quot;terra1s5afhd6gxevu37mkqcvvsj8qeylhn0rzn7cdaq&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;denom&quot;</span><span class="p">:</span> <span class="s2">&quot;uluna&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;10000&quot;</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;deposit&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;denom&quot;</span><span class="p">:</span> <span class="s2">&quot;uluna&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;10000&quot;</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Community Pool Spend&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pay me some Lunas!&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;recipient&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;terra1s5afhd6gxevu37mkqcvvsj8qeylhn0rzn7cdaq&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;denom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uluna&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10000&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;deposit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;denom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uluna&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10000&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="tax-rate-and-reward-weight-update-proposals">
 <h3>Tax-rate and reward-weight update proposals<a class="headerlink" href="#tax-rate-and-reward-weight-update-proposals" title="Permalink to this headline">¶</a></h3>
-<p>Tax rate and reward weight are important monetary policy levers handled by the <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Treasury</span></code></span> module to modulate miner incentives toward stable demand and steady growth. Usually, they are automatically calibrated once per epoch by the protocol. However, they can be changed at any time, if an update proposal gets passed with enough supporters.</p>
+<div class="warning admonition">
+<p class="admonition-title">Note</p>
+<p>As of proposals <a class="reference external" href="https://station.terra.money/proposal/43">43</a> and <a class="reference external" href="https://station.terra.money/proposal/172">172</a>, all seigniorage is burned, and the stability fee tax rate is fixed at zero.Although the Treasury module is no longer effectively used, the commands are kept for reference.</p>
+</div>
+<p>Tax rate and reward weight are important monetary policy levers handled by the <a class="reference internal" href="../../module-specifications/spec-treasury.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Treasury</span></code></span></a> module to modulate miner incentives toward stable demand and steady growth. Usually, they are automatically calibrated once per epoch by the protocol. However, they can be changed at any time, if an update proposal gets passed with enough supporters.</p>
 <p>When you submit a tax rate or reward weight update proposal, we recommend you send the proposal as a JSON file.</p>
 <p>For tax rate:</p>
 <p><strong>Syntax</strong></p>
@@ -4895,17 +5452,17 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
 </pre></div>
 </div>
 <p>where <code class="docutils literal notranslate"><span class="pre">proposal.json</span></code> contains the following information:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Update Tax-Rate&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Let&#39;s update the tax-rate to 1.5%&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;tax_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;0.015&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;deposit&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;denom&quot;</span><span class="p">:</span> <span class="s2">&quot;uluna&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;10000&quot;</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Update Tax-Rate&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Let&#39;s update the tax-rate to 1.5%&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;tax_rate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.015&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;deposit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;denom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uluna&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10000&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>For reward weight:</p>
@@ -4924,20 +5481,20 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
 </pre></div>
 </div>
 <p>where <code class="docutils literal notranslate"><span class="pre">proposal.json</span></code> contains the following information:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Update Reward Weight&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Let&#39;s update reward weight to 1.5%&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;reward_weight&quot;</span><span class="p">:</span> <span class="s2">&quot;0.015&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;deposit&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;denom&quot;</span><span class="p">:</span> <span class="s2">&quot;uluna&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;10000&quot;</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Update Reward Weight&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Let&#39;s update reward weight to 1.5%&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;reward_weight&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.015&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;deposit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;denom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uluna&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10000&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Tax reward and reward weight updates that are passed by governance proposals are subject to <span class="xref myst">policy constraints</span>.</p>
+<p>Tax reward and reward weight updates that are passed by governance proposals are subject to <a class="reference internal" href="../../module-specifications/spec-treasury.html#policy-constraints"><span class="std std-doc">policy constraints</span></a>.</p>
 </div>
 <div class="section" id="software-upgrade-proposals">
 <h3>Software upgrade proposals<a class="headerlink" href="#software-upgrade-proposals" title="Permalink to this headline">¶</a></h3>
@@ -5067,7 +5624,7 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
     <span class="s2">&quot;terravaloper15h6vd5f0wqps26zjlwrc6chah08ryu4hzzdwhc&quot;</span> <span class="se">\</span>
 </pre></div>
 </div>
-<p>Given that oracle votes must be submitted in a feed over short time intervals (30 seconds), prevotes and votes must be submitted via some persistent server daemon, not manually. For more information, see <span class="xref myst">Exchange Rate Oracle</span> section of the validator documentation and the <span class="xref myst">Oracle Module Specification</span>.</p>
+<p>Given that oracle votes must be submitted in a feed over short time intervals (30 seconds), prevotes and votes must be submitted via some persistent server daemon, not manually. For more information, see the <a class="reference internal" href="../../module-specifications/spec-oracle.html"><span class="doc std std-doc">Oracle Module Specification</span></a>.</p>
 </div>
 <div class="section" id="tx-oracle-set-feeder">
 <h2><code class="docutils literal notranslate"><span class="pre">tx</span> <span class="pre">oracle</span> <span class="pre">set-feeder</span></code><a class="headerlink" href="#tx-oracle-set-feeder" title="Permalink to this headline">¶</a></h2>
@@ -5232,7 +5789,7 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="commands.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -5243,7 +5800,7 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
     <a class='right-next' id="next-link" href="../localterra/README.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">LocalTerra</p>
+        <p class="prev-next-title">LocalTerra </p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -5254,12 +5811,52 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
     <footer class="footer">
   <p>
     
-      By Terraform Labs<br/>
-    
-        &copy; Copyright 2021, Terraform Labs.<br/>
-      <div class="extra_footer">
-        <div class="logos"><a href="https://discord.gg/e29HWwC2Mz" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/discord.svg" alt="link to Terra discord room"></a> <a href="https://medium.com/terra-money" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/medium.svg" alt="link to Terra medium"></a> <a href="https://twitter.com/terra_money" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/twitter.svg" alt="link to Terra twitter"></a> <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/icon_youtube.png" alt="link to Terra youtube"></a> <a href="https://t.me/terra_announcements" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/icon_telegram.png" alt="link to Terra telegram room"></a></div>
+
+    <div class="extra_footer container">
+      <div class="row">
+
+        <div class="col">
+
+          <div class="logos">
+            <a href="https://discord.gg/e29HWwC2Mz" rel="noopener" target="_blank"><img src="/discord.svg" alt="link to Terra discord room"></a>&nbsp;
+            <a href="https://medium.com/terra-money" rel="noopener" target="_blank"><img src="/medium.svg" alt="link to Terra medium"></a>&nbsp;
+            <a href="https://twitter.com/terra_money" rel="noopener" target="_blank"><img src="/twitter.svg" alt="link to Terra twitter"></a>&nbsp;
+            <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" rel="noopener" target="_blank"><img src="/icon_youtube.png" alt="link to Terra youtube"></a>&nbsp;
+            <a href="https://t.me/terra_announcements" rel="noopener" target="_blank"><img src="/icon_telegram.png" alt="link to Terra telegram room"></a>
+          </div>
+
+        </div>
+
+        <div class="col-md-auto">
+
+          <a href="https://www.terra.money/" >terra.money</a> <br/>
+          <a href="mailto:general@terra.money" >Contact</a> <br/>
+          <a href="https://terra.breezy.hr/"> Careers</a> <br/>
+          <br/>
+
+        </div>
+
+        <div class="col-md-auto">
+
+          <a href="https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf" >Whitepaper</a> <br/>
+          <a href="https://certik.org/projects/terra" >Security Audit</a> <br/>
+          <a href="https://agora.terra.money/" >Agora forum</a> <br/>
+          <br/>
+
+        </div>
+
+        <div class="col">
+          <a href="https://finder.terra.money/" >Terra Finder</a> <br/>
+          <a href="https://station.terra.money/" >Terra Station</a> <br/>
+          <a href="https://status.terra.money/" >Status</a> <br/>
+          <br/>
+
+        </div>
+
       </div>
+    </div>
+
+
   </p>
 </footer>
 </main>
@@ -5268,7 +5865,7 @@ terrad tx distribution fund-community-pool 100ukrw,200uusd</p>
       </div>
     </div>
   
-  <script src="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-
+    <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
   </body>
 </html>

@@ -1,12 +1,11 @@
 # Learn
 
-Discover how the Terra protocol works and learn about validators, staking, and governance. Use the Terra Station guides to create a wallet, stake Luna, send coins, and participate in governance. Browse the glossary to look up helpful terms.
+Discover [how the Terra protocol works](protocol.md) and learn about [validators](protocol.md#validators), [staking](protocol.md#staking), and [governance](protocol.md#governance). Use [Terra Station](terra-station/README.md) to [create a wallet](terra-station/download/README.md), [stake Luna](terra-station/station-guides/staking.md), [send tokens](terra-station/station-guides/wallet.md#send-tokens), and [participate in governance](terra-station/station-guides/governance.md). Browse the [glossary](glossary.md) to look up helpful terms.
 
 ```{toctree}
 :hidden:
 terra-station/README
 protocol
-ecosystem/README
 fees
 glossary
 ```
@@ -47,7 +46,7 @@ Learn how Luna helps stabilize the price of Terra.
 :::{grid-item-card}
 :link: protocol.html#validators
 :class-card: sd-text-center sd-shadow-md sd-rounded-3
-```{image} /img/staking.svg
+```{image} /img/Staking.svg
 :class: sd-width-auto sd-animate-grow50-rot20 sd-pb-2
 ```
 **Validators and Staking**  
@@ -57,7 +56,7 @@ Find out about validators, consensus, staking, and rewards.
 :::{grid-item-card}
 :link: fees.html
 :class-card: sd-text-center sd-shadow-md sd-rounded-3
-```{image} /img/fees.svg
+```{image} /img/Fees.svg
 :class: sd-width-auto sd-animate-grow50-rot20 sd-pb-2
 ```
 **How fees work**  
@@ -67,7 +66,7 @@ Learn how fees become staking rewards.
 :::{grid-item-card}
 :link: glossary.html
 :class-card: sd-text-center sd-shadow-md sd-rounded-3
-```{image} /img/glossary.svg
+```{image} /img/Glossary.svg
 :class: sd-width-auto sd-animate-grow50-rot20 sd-pb-2
 ```
 **Glossary**  

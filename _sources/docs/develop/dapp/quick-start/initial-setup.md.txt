@@ -12,20 +12,7 @@ Terrain will help you:
 
 ## Prerequisites
 
-
-## 1. Download LocalTerra
-
-LocalTerra is a development environment designed to make it easy for smart contract developers to test their contracts locally.
-
-To download LocalTerra, run the following command:
-
-```sh
-git clone --branch v0.5.2 --depth 1 https://github.com/terra-money/localterra
-cd localterra
-docker-compose up
-```
-
-## 2. Set up Rust
+## 1. Set up Rust
 
 Rust is the main programming language used for CosmWasm smart contracts. While WASM smart contracts can theoretically be written in any programming language, CosmWasm libraries and tooling work best with Rust.
 
@@ -46,9 +33,41 @@ cargo install cargo-generate --features vendored-openssl
 cargo install cargo-run-script
 ```
 
-## 3.  Install Terrain
+## 2. Install Terrain
 
 Use npm to install the terrain command-line tool globally:
 
 ```sh
 npm install -g @iboss/terrain
+```
+
+## 3. Download LocalTerra or configure testnet
+
+LocalTerra is a development environment designed to make it easy for smart contract developers to test their contracts locally.
+
+::: {caution}
+Localterra may not work properly on machines with less than 16 GB of RAM. Please use the [Bombay testnet](using-terrain-testnet.md) if your device does not meet this requirement. 
+:::
+
+:::::::{grid}
+:gutter: 3
+
+:::{grid-item-card}
+:link: using-terrain-localterra.html
+:class-card: sd-text-center sd-shadow-md sd-rounded-3
+```{image} /img/LocalTerra.svg
+:class: sd-width-auto sd-animate-grow50-rot20 sd-pb-2
+```
+**Terrain and LocalTerra**  
+:::
+
+:::{grid-item-card}
+:link: using-terrain-testnet.html
+:class-card: sd-text-center sd-shadow-md sd-rounded-3
+```{image} /img/icon_node.svg
+:class: sd-width-auto sd-animate-grow50-rot20 sd-pb-2
+```
+**Terrain and the testnet**  
+:::
+
+:::::::

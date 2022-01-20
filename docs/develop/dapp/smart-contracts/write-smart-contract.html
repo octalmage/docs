@@ -6,22 +6,22 @@
     <meta charset="utf-8" />
     <title>Writing the Contract &#8212; Terra Docs  documentation</title>
     
-  <link href="../../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
+    <link href="../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
     
-  <link rel="stylesheet"
-    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link rel="stylesheet"
+      href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
-    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css" />
@@ -31,8 +31,8 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-  <link rel="preload" as="script" href="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
-
+    <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
     <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
@@ -41,13 +41,13 @@
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
     <script src="../../../../_static/design-tabs.js"></script>
-    <script src="../../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="shortcut icon" href="../../../../_static/docs_favicon.ico"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Guides" href="../../how-to/README.html" />
+    <link rel="next" title="Interacting with the Contract" href="interact-with-smart-contract.html" />
     <link rel="prev" title="Environment Setup" href="set-up-local-environment.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -65,7 +65,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../../index.html">
@@ -148,7 +153,7 @@
        </li>
        <li class="toctree-l4">
         <a class="reference internal" href="../../../learn/terra-station/station-guides/staking.html">
-         Manage delegations
+         Manage Staking
         </a>
        </li>
        <li class="toctree-l4">
@@ -168,7 +173,7 @@
        </li>
        <li class="toctree-l4">
         <a class="reference internal" href="../../../learn/terra-station/station-guides/testnet.html">
-         Use the testnet
+         Testnet
         </a>
        </li>
       </ul>
@@ -230,8 +235,13 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../quick-start/using-terrain.html">
-         Using Terrain
+        <a class="reference internal" href="../quick-start/using-terrain-localterra.html">
+         Use Terrain with LocalTerra
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../quick-start/using-terrain-testnet.html">
+         Use Terrain with the testnet
         </a>
        </li>
       </ul>
@@ -252,16 +262,6 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="interact-with-smart-contract.html">
-         Interacting with the Contract
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="manage-cw20-tokens.html">
-         CW20 Tokens
-        </a>
-       </li>
-       <li class="toctree-l4">
         <a class="reference internal" href="set-up-local-environment.html">
          Environment Setup
         </a>
@@ -269,6 +269,16 @@
        <li class="toctree-l4 current active">
         <a class="current reference internal" href="#">
          Writing the Contract
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="interact-with-smart-contract.html">
+         Interacting with the Contract
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="manage-cw20-tokens.html">
+         CW20 Tokens
         </a>
        </li>
       </ul>
@@ -287,7 +297,11 @@
     <ul>
      <li class="toctree-l3 has-children">
       <a class="reference internal" href="../../how-to/terrad/README.html">
-       terrad
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         terrad
+        </span>
+       </code>
       </a>
       <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
       <label for="toctree-checkbox-10">
@@ -359,11 +373,16 @@
        Start the light client daemon (LCD)
       </a>
      </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../how-to/endpoints.html">
+       RPC endpoints
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../module-specifications/README.html">
-     Terra core modules
+     Terra Core modules
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
     <label for="toctree-checkbox-12">
@@ -550,6 +569,11 @@
        </li>
       </ul>
      </li>
+     <li class="toctree-l3">
+      <a class="reference external" href="https://terra-money.github.io/terra.py/">
+       Terra.py
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
@@ -563,7 +587,53 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../../reference/endpoints.html">
+      <a class="reference external" href="https://lcd.terra.dev/swagger/">
+       Terra REST API
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference external" href="https://pkg.go.dev/github.com/terra-money/core">
+       Terra Core GoDoc
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../how-to/terrad/README.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         terrad
+        </span>
+       </code>
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+      <label for="toctree-checkbox-16">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/install-terrad.html">
+         Install terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/using-terrad.html">
+         Using terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/commands.html">
+         Commands
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/subcommands.html">
+         Subcommands
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../how-to/endpoints.html">
        RPC endpoints
       </a>
      </li>
@@ -587,8 +657,8 @@
   <a class="reference internal" href="../../../full-node/README.html">
    Full node
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-  <label for="toctree-checkbox-16">
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -597,8 +667,8 @@
     <a class="reference internal" href="../../../full-node/run-a-full-terra-node/README.html">
      Run a full Terra node
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-    <label for="toctree-checkbox-17">
+    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+    <label for="toctree-checkbox-18">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -644,8 +714,8 @@
     <a class="reference internal" href="../../../full-node/manage-a-terra-validator/README.html">
      Manage a validator
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-    <label for="toctree-checkbox-18">
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -682,10 +752,83 @@
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../../full-node/reference/README.html">
      Node reference
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference external" href="https://lcd.terra.dev/swagger/">
+       Terra REST API
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference external" href="https://pkg.go.dev/github.com/terra-money/core">
+       Terra Core GoDoc
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../how-to/terrad/README.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         terrad
+        </span>
+       </code>
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+      <label for="toctree-checkbox-21">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/install-terrad.html">
+         Install terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/using-terrad.html">
+         Using terrad
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/commands.html">
+         Commands
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../how-to/terrad/subcommands.html">
+         Subcommands
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../how-to/endpoints.html">
+       RPC endpoints
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../how-to/start-lcd.html">
+       Start the light client daemon (LCD)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/history-and-changes.html">
+       History and changes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/migration-guide.html">
+       Columbus-5 upgrade
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -695,8 +838,8 @@
   <a class="reference internal" href="../../../ecosystem/README.html">
    Ecosystem
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -709,6 +852,374 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../../../ecosystem/integrations.html">
      Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.terra.money/ecosystem">
+     dApps
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../spacecamp/README.html">
+   Spacecamp
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../learn/terra-station/README.html">
+     Terra Station
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../learn/terra-station/download/README.html">
+       Download
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/download/terra-station-desktop.html">
+         Terra Station desktop
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/download/terra-station-extension.html">
+         Terra Station extension
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/download/terra-station-mobile.html">
+         Terra Station mobile
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../learn/terra-station/station-guides/README.html">
+       Terra Station guides
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+      <label for="toctree-checkbox-26">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/wallet.html">
+         Wallet
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/staking.html">
+         Manage Staking
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/swap.html">
+         Mint, burn, or swap
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/governance.html">
+         Governance
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/contracts.html">
+         Contracts
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../learn/terra-station/station-guides/testnet.html">
+         Testnet
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../quick-start/README.html">
+     5-minute quickstart guide
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/>
+    <label for="toctree-checkbox-27">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../quick-start/initial-setup.html">
+       Initial setup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../quick-start/using-terrain-localterra.html">
+       Use Terrain with LocalTerra
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../quick-start/using-terrain-testnet.html">
+       Use Terrain with the testnet
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../quick-start/using-terrain-localterra.html">
+     Use Terrain with LocalTerra
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../quick-start/using-terrain-testnet.html">
+     Use Terrain with the testnet
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="README.html">
+     In-depth dApp guide
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/>
+    <label for="toctree-checkbox-28">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="build-terra-dapp.html">
+       Build a simple Terra dApp
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="set-up-local-environment.html">
+       Environment Setup
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Writing the Contract
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="interact-with-smart-contract.html">
+       Interacting with the Contract
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="manage-cw20-tokens.html">
+       CW20 Tokens
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../how-to/endpoints.html">
+     RPC endpoints
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../module-specifications/README.html">
+     Terra Core modules
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/>
+    <label for="toctree-checkbox-29">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-auth.html">
+       Auth
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-authz.html">
+       AuthZ
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-bank.html">
+       Bank
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-capability.html">
+       Capability
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-distribution.html">
+       Distribution
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-evidence.html">
+       Evidence
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-feegrant.html">
+       Fee grant
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-governance.html">
+       Governance
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-market.html">
+       Market
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-mint.html">
+       Mint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-oracle.html">
+       Oracle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-slashing.html">
+       Slashing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-staking.html">
+       Staking
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-treasury.html">
+       Treasury
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../module-specifications/spec-wasm.html">
+       WASM
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../sdks/terra-js/README.html">
+     Terra.js
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/>
+    <label for="toctree-checkbox-30">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/add-modules.html">
+       Add modules
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/coin-and-coins.html">
+       Coin and Coins
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/common-examples.html">
+       Common examples
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/fees.html">
+       Fees
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/keys.html">
+       Keys
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/make-a-connection.html">
+       Make a connection
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/msgAuthorization.html">
+       MsgAuthorization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/multisend.html">
+       MsgSend
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/numeric.html">
+       Numeric
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/oracle-feeder.html">
+       Oracle feeder
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/query-data.html">
+       Query data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/smart-contracts.html">
+       Smart contracts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/station-extension.html">
+       Terra Station extension
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/transactions.html">
+       Transactions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/wallets.html">
+       Wallets
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../sdks/terra-js/Websockets.html">
+       Websockets
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://terra-money.github.io/terra.py/">
+     Terra.py
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://faucet.terra.money/">
+     Faucet
     </a>
    </li>
   </ul>
@@ -725,22 +1236,22 @@
 
 
           
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
     <div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
             
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -812,7 +1323,7 @@
   <a class="reference internal nav-link" href="#instantiatemsg">
    InstantiateMsg
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#example">
      Example
@@ -834,12 +1345,12 @@
   <a class="reference internal nav-link" href="#executemsg">
    ExecuteMsg
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id1">
      Example
     </a>
-    <ul class="nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#increment">
        Increment
@@ -868,12 +1379,12 @@
   <a class="reference internal nav-link" href="#querymsg">
    QueryMsg
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
      Example
     </a>
-    <ul class="nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#balance">
        Balance
@@ -897,7 +1408,7 @@
   <a class="reference internal nav-link" href="#building-the-contract">
    Building the Contract
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#optimizing-your-build">
      Optimizing your build
@@ -944,7 +1455,7 @@
   <a class="reference internal nav-link" href="#instantiatemsg">
    InstantiateMsg
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#example">
      Example
@@ -966,12 +1477,12 @@
   <a class="reference internal nav-link" href="#executemsg">
    ExecuteMsg
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id1">
      Example
     </a>
-    <ul class="nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#increment">
        Increment
@@ -1000,12 +1511,12 @@
   <a class="reference internal nav-link" href="#querymsg">
    QueryMsg
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
      Example
     </a>
-    <ul class="nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#balance">
        Balance
@@ -1029,7 +1540,7 @@
   <a class="reference internal nav-link" href="#building-the-contract">
    Building the Contract
   </a>
-  <ul class="nav section-nav flex-column">
+  <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#optimizing-your-build">
      Optimizing your build
@@ -1122,9 +1633,9 @@
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
 <p>For our contract, we will expect a contract creator to supply the initial state in a JSON message:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">100</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1181,20 +1692,20 @@
 <div class="section" id="increment">
 <h4>Increment<a class="headerlink" href="#increment" title="Permalink to this headline">¶</a></h4>
 <p>Any user can increment the current count by 1.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;increment&quot;</span><span class="p">:</span> <span class="p">{}</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;increment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="reset">
 <h4>Reset<a class="headerlink" href="#reset" title="Permalink to this headline">¶</a></h4>
 <p>Only the owner can reset the count to a specific number.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;reset&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">5</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;reset&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1268,15 +1779,15 @@
 <div class="section" id="balance">
 <h4>Balance<a class="headerlink" href="#balance" title="Permalink to this headline">¶</a></h4>
 <p>The request:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;get_count&quot;</span><span class="p">:</span> <span class="p">{}</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;get_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Which should return:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">5</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1383,21 +1894,21 @@
 </pre></div>
 </div>
 <p>Your newly generated schemas should be visible in your <code class="docutils literal notranslate"><span class="pre">schema/</span></code> directory. The following is an example of <code class="docutils literal notranslate"><span class="pre">schema/query_msg.json</span></code>.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;QueryMsg&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;anyOf&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;get_count&quot;</span><span class="p">],</span>
-      <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;get_count&quot;</span><span class="p">:</span> <span class="p">{</span>
-          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span>
-        <span class="p">}</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;QueryMsg&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;anyOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get_count&quot;</span><span class="p">],</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;get_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You can use an online tool such as <a class="reference external" href="https://www.jsonschemavalidator.net/">JSON Schema Validator</a> to test your input against the generated JSON schema.</p>
@@ -1409,7 +1920,7 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="set-up-local-environment.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1417,10 +1928,10 @@
             <p class="prev-next-title">Environment Setup</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../how-to/README.html" title="next page">
+    <a class='right-next' id="next-link" href="interact-with-smart-contract.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Guides</p>
+        <p class="prev-next-title">Interacting with the Contract</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -1431,12 +1942,52 @@
     <footer class="footer">
   <p>
     
-      By Terraform Labs<br/>
-    
-        &copy; Copyright 2021, Terraform Labs.<br/>
-      <div class="extra_footer">
-        <div class="logos"><a href="https://discord.gg/e29HWwC2Mz" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/discord.svg" alt="link to Terra discord room"></a> <a href="https://medium.com/terra-money" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/medium.svg" alt="link to Terra medium"></a> <a href="https://twitter.com/terra_money" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/twitter.svg" alt="link to Terra twitter"></a> <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/icon_youtube.png" alt="link to Terra youtube"></a> <a href="https://t.me/terra_announcements" rel="noopener" target="_blank"><img src="https://docs.terra.money/img/icon_telegram.png" alt="link to Terra telegram room"></a></div>
+
+    <div class="extra_footer container">
+      <div class="row">
+
+        <div class="col">
+
+          <div class="logos">
+            <a href="https://discord.gg/e29HWwC2Mz" rel="noopener" target="_blank"><img src="/discord.svg" alt="link to Terra discord room"></a>&nbsp;
+            <a href="https://medium.com/terra-money" rel="noopener" target="_blank"><img src="/medium.svg" alt="link to Terra medium"></a>&nbsp;
+            <a href="https://twitter.com/terra_money" rel="noopener" target="_blank"><img src="/twitter.svg" alt="link to Terra twitter"></a>&nbsp;
+            <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" rel="noopener" target="_blank"><img src="/icon_youtube.png" alt="link to Terra youtube"></a>&nbsp;
+            <a href="https://t.me/terra_announcements" rel="noopener" target="_blank"><img src="/icon_telegram.png" alt="link to Terra telegram room"></a>
+          </div>
+
+        </div>
+
+        <div class="col-md-auto">
+
+          <a href="https://www.terra.money/" >terra.money</a> <br/>
+          <a href="mailto:general@terra.money" >Contact</a> <br/>
+          <a href="https://terra.breezy.hr/"> Careers</a> <br/>
+          <br/>
+
+        </div>
+
+        <div class="col-md-auto">
+
+          <a href="https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf" >Whitepaper</a> <br/>
+          <a href="https://certik.org/projects/terra" >Security Audit</a> <br/>
+          <a href="https://agora.terra.money/" >Agora forum</a> <br/>
+          <br/>
+
+        </div>
+
+        <div class="col">
+          <a href="https://finder.terra.money/" >Terra Finder</a> <br/>
+          <a href="https://station.terra.money/" >Terra Station</a> <br/>
+          <a href="https://status.terra.money/" >Status</a> <br/>
+          <br/>
+
+        </div>
+
       </div>
+    </div>
+
+
   </p>
 </footer>
 </main>
@@ -1445,7 +1996,7 @@
       </div>
     </div>
   
-  <script src="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-
+    <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
   </body>
 </html>

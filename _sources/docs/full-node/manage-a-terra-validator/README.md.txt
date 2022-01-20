@@ -1,4 +1,4 @@
-# Manage a validator
+# Manage a validator <img src="/img/Build_a_validator.svg" height="40px">
 
 The tasks in this section describe how to set up a Terra validator. While setting up a rudimentary validating node is easy, running a production-quality validator node with a robust architecture and security features requires an extensive setup.
 
@@ -7,8 +7,6 @@ The Terra core is powered by the Tendermint consensus. Validators run full nodes
 Validators and their delegators earn the following fees:
 
 - [Gas](../../learn/fees.md#gas): Fees added on to each transaction to avoid spamming and pay for computing power. Validators set minimum gas prices and reject transactions that have implied gas prices below this threshold.
-
-- [Stability fees](../../learn/fees.md#stability-fee): Fees added on to any Terra stablecoin transaction (excluding [market swaps](../../learn/glossary.md#market-swap)) to provide stability in the market, capped at 1SDT. The fee rate is variable and called the tax rate.
 
 - **Swap fees**: The fee for swapping Terra stablecoin denominations is called a [Tobin tax](../../learn/fees.md#tobin-tax). Exchanges between Terra and Luna are subject to a [spread fee](../../learn/fees.md#spread-fee).
 
